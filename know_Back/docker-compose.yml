@@ -1,0 +1,32 @@
+version: '3.0'
+
+services:
+  backend:
+    build:
+      context: .
+    volumes:
+      - files:/app/dist/static
+    ports:
+      - 8000:8000
+    depends_on:
+      - postgres
+    restart: always
+  postgres:
+    image: postgres:12
+    environment:
+      - PG_DATA=/var/lib/postgresql/data
+      - POSTGRES_HOST
+      - POSTGRES_USER
+      - POSTGRES_DB
+      - POSTGRES_PASSWORD
+      - POSTGRES_PORT
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pgdata:
+  files:
+

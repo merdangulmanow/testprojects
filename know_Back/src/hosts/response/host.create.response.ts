@@ -1,0 +1,7 @@
+const hostCreateResponse = {
+	accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZXMiOlsiaG9zdCJdLCJpYXQiOjE2NTA5OTIzNzcsImV4cCI6MTY1MTA3ODc3N30.vBiRtaW8tzL2oGT9iWRid_dejMAEHjSIvD7jpLL9J-8",
+	refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZXMiOlsiaG9zdCJdLCJpYXQiOjE2NTA5OTIzNzcsImV4cCI6MTY1MzU4NDM3N30.GvP7C2402EFGGkLBafeB-xGFyhMWM_C1tGTittsCK6M"
+
+}
+
+export default hostCreateResponse
